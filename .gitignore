@@ -1,0 +1,48 @@
+# Jupyter checkpoints
+.ipynb_checkpoints/
+.ipynb_aml_checkpoints/
+
+# Azure ML temp files
+.amlignore.amltmp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+rl-env/
+venv/
+env/
+.venv/
+
+# Project-specific folders
+TARPEETTOMAT/
+
+# Conda environment files
+env/rl-env.lock
+env/rl-env.yml.bak
+
+# Logs and outputs
+logs/
+outputs/*.log
+outputs/*.pth
+outputs/*.mp4
+
+# VSCode and IDE configs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Generated files and folders
+GUIDE.md
+EHDOTUKSET.md
+TODO.md
+CHANGE_LOG.md
+*.pdf
+/OLD
+/checkpoints
