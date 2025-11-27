@@ -135,7 +135,7 @@ Below is a concise comparison of the two training entrypoints in this repository
 | Episodes | `EPISODES = 20` (quick smoke runs) | `EPISODES = 126` (longer training) | Final run configured for full experiment length.
 | Max steps per episode | `MAX_STEPS = 5000` | `MAX_STEPS = 5000` | Same step horizon.
 | Frame stacking | Not explicitly set/used | `FRAME_STACK_SIZE = 4` | Final restores 4-frame stacking for temporal context.
-| Learning rate (LR) | `LR = 0.1` (pilot file shows this but commented as e-4) | `LR = 1e-4` (stable training) | Final uses much smaller LR to stabilize updates.
+| Learning rate (LR) | `LR = 0.1` | `LR = 1e-4` (stable training) | Final uses much smaller LR to stabilize updates.
 | Batch size | `BATCH_SIZE = 32` | `BATCH_SIZE = 128` | Final uses larger batches for lower-variance gradients.
 | Epsilon schedule | `EPS_START = 0.5`, `EPS_END = 0.05`, `EPS_DECAY = 0.995` | `EPS_START = 1.0`, `EPS_END = 0.10`, `EPS_DECAY = 0.98` | Final starts with more exploration and decays faster to encourage early broad exploration.
 | Target network update | `TARGET_UPDATE = 10` | `TARGET_UPDATE = 2` | Final syncs target more frequently to reduce Q drift.
